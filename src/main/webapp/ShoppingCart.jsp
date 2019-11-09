@@ -29,7 +29,7 @@
                   <th></th>
 	            </tr>
 
-      	 			<c:forEach items="${cart.cartItems}" var="cartItem">
+      	 			<c:forEach items="${cart.cartItems}" var="cartItem" varStatus="loop">
                   <tr>
                       <form action="/cart/update" name="cart_form">
                         <input  type="hidden" name="index" value="c:out value='${loop.index}'"/>
